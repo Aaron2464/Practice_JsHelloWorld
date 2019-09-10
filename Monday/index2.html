@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Shop</title>
+    <link rel = "shortcut icon" href="images/coffee.png" type = "images/x-icon">
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+</head>
+<body>
+    <div id="box">
+        <div class="top">
+            <img src = "images/coffee.png" alt = "coffee"></ima>
+            <h1>coffee & Tea</h1>
+            <p >greceful scent and taste</p>
+        </div>
+        <div class="bottom">
+            <h1 id = "output"></h1>
+            <p>For orders and inquires, please call Cindy 604-123-4567</p>
+        </div>
+    </div>
+    <script>
+        function callDay(){
+            var today = new Date();
+            var hourNow = today.getHours();
+            if(hourNow > 18)write("Good Evening");
+            else if(hourNow > 12) write( "Good Afternoon");
+            else if(hourNow > 8) write("Good Morning");
+            else write("Welcome");
+        }
+        function write(s){
+            document.getElementById("output").innerHTML = s;
+        }
+        callDay();
+    </script>
+</body>
+</html>

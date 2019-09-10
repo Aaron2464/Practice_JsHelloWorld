@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "output"></h1>
+    <script>
+        var userName = prompt("What is your name?");
+        var engScore = parseInt(prompt("The score of English is?"));
+        var mathScore = parseInt(prompt("The score of Math is?"));
+        var sciScore = parseInt(prompt("The scroe of Science is?"));
+        var average = (engScore + mathScore + sciScore) / 3;
+        let output = document.getElementById("output");
+            if(average >= 90){
+                output.innerHTML ="Hi, " + userName + "<br>" +
+                                "English: "+ engScore  + "<br>" +
+                                "Math: " + mathScore + "<br>" +
+                                "Science: " + sciScore + "<br>" +
+                                "Average: " + average + "<br>" + 
+                                 "You are excellent!";
+            }else if(average >= 80){
+                output.innerHTML ="Hi, " + userName + "<br>" +
+                                "English: "+ engScore  + "<br>" +
+                                "Math: " + mathScore + "<br>" +
+                                "Science: " + sciScore + "<br>" +
+                                "Average: " + average + "<br>" + 
+                                 "You did a good job!";
+            }else if (average >= 70){
+                output.innerHTML ="Hi, " + userName + "<br>" +
+                                "English: "+ engScore  + "<br>" +
+                                "Math: " + mathScore + "<br>" +
+                                "Science: " + sciScore + "<br>" +
+                                "Average: " + average + "<br>" + 
+                                "Not bad!";
+            }else {
+                output.innerHTML ="Hi, " + userName + "<br>" +
+                                "English: "+ engScore  + "<br>" +
+                                "Math: " + mathScore + "<br>" +
+                                "Science: " + sciScore + "<br>" +
+                                "Average: " + average + "<br>" + 
+                                "Sorry you fail! Please take a rest!";
+            }
+        
+    </script>
+</body>
+</html>
