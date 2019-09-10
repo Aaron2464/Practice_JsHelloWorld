@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #output{
+            font-size: 10em;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "output">
+        <script>
+            var output = document.getElementById("output");
+            var temp = parseInt(prompt("temperature"));
+            var tempSymbol = prompt("temperature symbol").toLowerCase();
+            
+            if (tempSymbol == 'c'){
+                // output.innerHTML = Math.round(temp*9/5 + 32) + " øF";
+                output.innerHTML = (temp*9/5 + 32).toFixed(2) + " øF";
+            }else if (tempSymbol == 'f'){
+                // output.innerHTML = Math.round((temp-32)*5/9) + " øC";
+                output.innerHTML = ((temp-32)*5/9).toFixed(2) + " øC";
+            }else{
+                window.alert("Again,please. I can not understand");
+            }
+        </script>
+    </div>
+</body>
+</html>
