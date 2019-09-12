@@ -10,9 +10,9 @@
     <div id = "output">
         <script>
             var num = [105, 2 ,45, 35, 1, 23, 15];
-            var sortNum = num.sort();
+            // var sortNum = num.sort();
             // var sortNum = num.sort((a,b) => a-b);
-            // var sortNum = num.sort(function(a,b){return a-b});
+            var sortNum = num.sort(function(a,b){return a-b});
             document.getElementById("output").innerHTML = sortNum;
         </script>
     </div>

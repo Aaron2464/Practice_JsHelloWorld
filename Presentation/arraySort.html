@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "demo"></div>
+    <input type="button" value="Sort" style="width:100px;height:30px;" onclick="sort();"/>
+    <input type="button" value="Reverse" style="width:100px;height:30px;" onclick="reverse();"/>
+    
+    <div id = "result">    
+        <script>
+            var arrayFruits = [ "Durian", "Figs", "Blackberries", "Apricots", "Cherry", "Grapefruit"];
+            document.getElementById("demo").innerHTML = arrayFruits;
+            
+            function sort(){
+               var stringArray = arrayFruits.sort();
+               console.log(stringArray);
+               document.getElementById("result").innerHTML = stringArray;
+            }
+
+            function reverse(){
+                var stringArray = arrayFruits.reverse();
+                console.log(stringArray);
+                document.getElementById("result").innerHTML = stringArray;
+            }
+            </script> 
+    </div>
+</body>
+</html>
+
+<!-- "Durian", "Figs", "Blackberries", "Apricots", "Cherry", "Grapefruit" -->

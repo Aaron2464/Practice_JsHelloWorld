@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="button" href="Presentation/btn.css">
+    <style>
+        #result{
+            font-size: 15em;
+            margin: 0 auto;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>1st Number: <input type="text" id = "firstNumber"></p>
+    <p>2nd Number: <input type="text" id = "secondNumber"></p>
+
+    <input type="button" value="multiply" 
+        style="width:100px;height:30px;" onclick="multiply();"/>
+    <input type="button" value="divide"
+         style="width:100px;height:30px;" onclick="divide();"/>
+    
+    <p>The Result is: </p>
+
+    <div id="result">
+        <script>
+            
+            function multiply(){
+                var firstNum = document.getElementById("firstNumber").value;
+                var secondNum = document.getElementById("secondNumber").value;
+                var result = 0;
+            
+                firstNum = parseInt(firstNum);
+                secondNum = parseInt(secondNum);
+                console.log("firstNum " + firstNum + " " + document.getElementById("firstNumber").value);
+                result = firstNum * secondNum;
+                document.getElementById("result").innerHTML = result;
+            }
+
+            function divide(){
+                var firstNum = document.getElementById("firstNumber").value;
+                var secondNum = document.getElementById("secondNumber").value;
+                var result = 0;
+        
+                console.log("firstNum " + firstNum + " " + document.getElementById("firstNumber").value);
+                result = parseFloat(firstNum)*parseFloat(secondNum);
+                document.getElementById("result").innerHTML = firstNum / secondNum;
+            }
+        </script>
+    </div>
+</body>
+</html>

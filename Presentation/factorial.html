@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="output"></h1>
+
+    <script>
+        var input = parseInt(prompt("Which number do you want to give me?"));
+        function factorial(input) {
+            var num = 0;
+            if (input == 0)
+                document.getElementById("output").innerHTML = "Factorial of " + input + "is 1";
+            else {
+                for (i = 1; i < input; i++) {
+                    num = i * (i + 1);
+                }
+                document.getElementById("output").innerHTML = "Factorial of " + input + " is " + num;
+            }
+        }
+        factorial(input)
+    </script>
+</body>
+</html>

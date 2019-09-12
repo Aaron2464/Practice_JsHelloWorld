@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center
+    }
+    #kgOutput{
+        text-align: center
+    }
+    #lbOutput{
+        text-align: center
+    }
+</style>
+<body>
+    <h1 id="kgH1">
+        kg: <input type="number" id = "kgInput"  oninput="lbConvert(this.value)" onchange="lbConvert(this.value)">
+    </h1>
+    <h1 id = "poundH1">
+        pounds: <input type="number" id = "poundInput" oninput="kgConvert(this.value)" onchange="kgConvert(this.value)">
+    </h1>
+
+    <div id = "kgOutput">
+        <p> Pounds: </p>
+    </div>
+    <div id = "lbOutput">
+        <p> Kilograms: </p>    
+    </div>
+    <script src = "convert.js"></script>
+</body>
+</html>
