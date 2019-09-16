@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("what is your name?");
+        var java = parseInt(prompt("what is your Java score?"));
+        var intro = parseInt(prompt("What is your intro score?"));
+        var algor = parseInt(prompt("What is your algorithm score?"));
+        var average;
+
+        average = (java + intro + algor) / 3;
+
+        if (average >= 70) document.write(name + ", you pased because you got " + average);
+        else document.write(name + ", you failed because you got " + average);
+    </script>
+</body>
+
+</html>

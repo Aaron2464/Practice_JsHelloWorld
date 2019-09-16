@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="background-color:#E6E6FA">
+    <script>
+        var user = prompt("What is your name?");
+        var num1 = parseInt(prompt("Choose one number you want?"));
+        var num2 = parseInt(prompt("Choose another number you want?"));
+        var char = prompt("choose one about + -  * / ");
+
+        switch (char) {
+            case '+':
+                document.write("Hi, " + user + ", " + num1 + " + " + num2 + " = " + (num1 + num2));
+                break;
+            case '-':
+                document.write("Hi, " + user + ", " + num1 + " - " + num2 + " = " + (num1 - num2));
+                break;
+            case '*':
+                document.write("Hi, " + user + ", " + num1 + " * " + num2 + " = " + (num1 * num2));
+                break;
+            case '/':
+                document.write("Hi, " + user + ", " + num1 + " / " + num2 + " = " + (num1 / num2));
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>
