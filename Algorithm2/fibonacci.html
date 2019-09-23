@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="put"></h1>
+    <script>
+        var a = 0;
+        var b = 1;
+        var c = 0;
+        function mono(n) {
+            if (n == 0) return 0;
+            else if (n == 1) return 1;
+            return mono(n - 1) + mono(n - 2);
+        }
+        function mono1(n) {
+            for (let i = 0 ; i < n; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+                document.getElementById("put").innerHTML = c + "<br>";
+            }
+        }
+        document.write(mono(10));
+        mono1(10);
+    </script>
+</body>
+
+</html>
