@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+
+        //init a,k temp
+        var a = [1, 9, 4, 5, 16, 7, 33];
+        var k = 0;
+        var temp = 0;
+
+        //make a function
+        function selectSort() {
+            //first forloop is for keep i position 
+            for (let i = 0; i < a.length-1; i++) {
+                let min = a[i];
+                //check and find the smallest number, keep k position, we will swap position later
+                for (let j = i; j < a.length; j++) {
+                    if (min >= a[j]) {
+                        min = a[j];
+                        k = j;
+                    }
+                }
+
+                // if k position is not i position, swap this two positions 
+                if (i != k) {
+                    temp = a[i];
+                    a[i] = a[k];
+                    a[k] = temp;
+                }
+
+                //print log
+                console.log(a);
+            }
+
+            //shows result on the browser
+            document.write(a);
+        }
+        selectSort();
+    </script>
+</body>
+
+</html>
